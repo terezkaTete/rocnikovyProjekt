@@ -1,0 +1,31 @@
+[
+    {
+        "id": 0,
+        "wall": {
+            "width": 8,
+            "height": 12,
+            "holds": [
+                {
+                    "x": 3,
+                    "y": 2,
+                    "hold_type": "jugs"
+                },
+                {
+                    "x": 2,
+                    "y": 4,
+                    "hold_type": "jugs"
+                },
+                {
+                    "x": 5,
+                    "y": 6,
+                    "hold_type": "jugs"
+                },
+                {
+                    "x": 4,
+                    "y": 1,
+                    "hold_type": "crimps"
+                }
+            ]
+        }
+    }
+]
