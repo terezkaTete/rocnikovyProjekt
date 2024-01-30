@@ -22,8 +22,8 @@ def load_saved_wall():
         selected_wall_index = wall_listbox.curselection()
         window.destroy()
         if selected_wall_index:
-            selected_wall_data = walls_data[selected_wall_index[0]]['wall']  # Adjusted the key to ['wall'
-            wall = ClimbingWall(selected_wall_data['width'], selected_wall_data['height'], selected_wall_data['holds'], walls_data[selected_wall_index[0]]['id'])  # Adjusted the keys to 'width' and 'height'
+            selected_wall_data = walls_data[selected_wall_index[0]]['wall']
+            wall = ClimbingWall(selected_wall_data['width'], selected_wall_data['height'], selected_wall_data['holds'], walls_data[selected_wall_index[0]]['id'])
             wall.display()
         else:
             messagebox.showinfo("No Wall Selected", "Please select a wall.")
@@ -34,8 +34,7 @@ def load_saved_wall():
 
 # Function to create a new wall
 def create_new_wall():
-    # Example usage
-    wall = ClimbingWall(8, 12)
+    wall = ClimbingWall(8, 12) # Temporary values for width and height, can be changed later
     window.destroy()
     wall.display()
     

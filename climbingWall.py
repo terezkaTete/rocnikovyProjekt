@@ -24,10 +24,12 @@ class ClimbingWall:
         self.width = width
         self.height = height
         self.holds = []
-        if(id is None):
+        
+        if(id is None): # No id provided - this is a new wall
             self.id = -1
         else:
             self.id = id
+        
         if holds_data is not None:
             for hold_data in holds_data:
                 hold = Hold(hold_data["x"], hold_data["y"], hold_data["hold_type"])
@@ -81,7 +83,7 @@ class ClimbingWall:
             else:
                 wall_id = 0
 
-            if self.id != -1:
+            if self.id != -1: # Update existing wall
                 print("Updating wall...")
                 for wall in walls:
                     if wall["id"] == self.id:
@@ -92,7 +94,7 @@ class ClimbingWall:
                             for hold in self.holds
                         ]
                         break
-            else:
+            else: # Add new wall
                 data = {
                     "id": wall_id,
                     "wall": {

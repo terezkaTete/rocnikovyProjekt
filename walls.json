@@ -24,6 +24,25 @@
                     "x": 4,
                     "y": 1,
                     "hold_type": "crimps"
+                },
+                {
+                    "x": 5,
+                    "y": 5,
+                    "hold_type": "jugs"
+                }
+            ]
+        }
+    },
+    {
+        "id": 1,
+        "wall": {
+            "width": 8,
+            "height": 12,
+            "holds": [
+                {
+                    "x": 4,
+                    "y": 5,
+                    "hold_type": "pinches"
                 }
             ]
         }
